@@ -17,11 +17,11 @@ title: Sami
 email: samiinfosec@gmail.com
 name: Andoni
 description: >- # this means to ignore newlines until "baseurl:"
-  SysAdmin & CyberSec
+  Another basic blog
 keywords: [Your keywords]
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-domain: "example.com" # the domain name for your site, e.g. example.com
+domain: "samiinfosec.github.io" # the domain name for your site, e.g. example.com
 language: es
 # Supported languages list:
 # en: English
