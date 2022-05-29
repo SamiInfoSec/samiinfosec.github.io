@@ -78,7 +78,7 @@ Vamos a instalar una serie de paquetes a mi gusto.
 que usaré en el post son diseñados para estos paquetes especificamente.
 ```console
 root@debian:~# apt update
-root@debian:~# apt install gnome sudo firefox-esr kitty zsh compton rofi pulseaudio pavucontrol polybar feh zsh-autosuggestions zsh-syntax-highlighting flameshot ranger thunar git
+root@debian:~# apt install gnome sudo firefox-esr kitty zsh compton rofi pulseaudio pavucontrol polybar feh zsh-autosuggestions zsh-syntax-highlighting flameshot ranger thunar git telegram-desktop
 ```
 <br>
 ### Descripción de Paquetes:<br>
@@ -96,20 +96,20 @@ root@debian:~# apt install gnome sudo firefox-esr kitty zsh compton rofi pulseau
 **flameshot**: Capturas de pantalla.<br>
 **ranger**: Explorador de archivos de terminal.<br>
 **thunar**: Explorador de archivos gráfico.<br>
-**git**: Aplicación para gestionar *Github*<br>
-<br>
+**git**: Aplicación para gestionar *Github*.<br>
+**telegram-desktop**: Aplicación de escritorio de Telegram.<br>
 
-Una vez instalado todo, vamos a dar permisos de **sudo** a nuestro usuario para dejar de utilizar root, práctica muy poco recomendable.
-<br>
+Una vez instalado todo, vamos a dar permisos de **sudo** a nuestro usuario para dejar de utilizar *root*.<br>
+
 Para ello, vamos a añadir a nuestro usuario principal al grupo **sudo** de la siguiente manera:<br>
 ```console
 root@debian:~# usermod -aG sudo sami
 ```
 <br>
 Como somos *hackers* y **gnome** es demasiado gráfico, vamos a instalar otro entorno de escritorio más *PRO*, como **i3**.<br>
-Gracias al señor *https://github.com/maestrogerardo/* tenemos un script que hasta un mono podría instalar de la siguiente manera:
+Gracias al señor **https://github.com/maestrogerardo/** tenemos un script que hasta un mono podría instalar de la siguiente manera:
 <br>
-***<center>TAN SIMPLE COMO DARLE 'ENTER' TODO EL RATO</center>***
+***<center>DARLE 'ENTER' TODO EL RATO</center>***
 <br>
 ```console
 root@debian:~# git clone https://github.com/maestrogerardo/i3-gaps-deb.git
@@ -122,5 +122,19 @@ Solo nos queda reiniciar el sistema y rezar por que no explote nada.
 ## <center>Archivos_de_Configuración</center><br>
 Nos toca ponernos con los archivos de configuración de las aplicaciones que hemos instalado, que es lo que les va a dar el toque *hacker*.<br>
 Por hacerlo lo más simple posible, nos vamos a descargar todos los archivos juntos y los vamos a ir colocando en las rutas siguientes:
+
+El contenido de la carpeta de **fonts** vamos a copiarlo en:
+***/usr/share/fonts/***<br>
+El contenido de la carpeta **polybar** lo copiamos en:
+***/home/sami/.config/polybar/***<br>
+El archivo **config** lo metemos en la carpeta:
+***/home/sami/.config/i3/***<br>
+Los archivos **.Xresources** y **.zshrc** van en:
+***/home/sami/***<br>
+El contenido de la carpeta **kitty** va en:
+***/home/sami/.config/kitty/***<br>
+
+
+
 
 
