@@ -17,7 +17,7 @@ title: Sami
 email: samiinfosec@gmail.com
 name: Andoni
 description: >- # this means to ignore newlines until "baseurl:"
-  Another basic blog
+  Otro blog inútil
 keywords: [Your keywords]
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
