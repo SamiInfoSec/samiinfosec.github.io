@@ -11,14 +11,16 @@ tags: [Getting Start]
 Como entusiasta del mundo Linux, he sido *distrohopper* mucho tiempo, y puedo asegurar que no hay nada como Debian. Pero para gustos, los culos.<br>
 Si a esto le sumamos que me gusta tener un entorno de trabajo funcional y precioso a partes iguales, tras muchas peleas he conseguido mi configuración perfecta.<br>
 Voy a dar todos los detalles para llegar al mismo punto, partiendo de una instalación de Debian literalmente **mínima**.
-<br><br>*Si no sabes instalar Debian sin entorno gráfico, sal de este blog **[ahora mismo](https://google.es)**.*<br><br>
-
+<br><br>*Si no sabes instalar Debian sin entorno gráfico, sal de este blog **[ahora mismo](https://google.es)**.*<br>
+<hr><br>
 # <center>Contenido</center>
-1. [Configuración Inicial](#configuracion_inicial)
-2. [Instalando Paquetes](#instalando_paquetes)
-3. [Archivos de Configuración](#archivos_de_configuracion)
+<br>
+1. [**Configuración**](#configuración)
+2. [**Paquetes**](#paquetes)
+3. [**Archivos**](#archivos)
 
-## <center>Configuración_Inicial</center><br>
+<hr>
+## <br><center>Configuración</center><br>
 Primero vamos a ponernos como ***root***
 ```console
 sami@debian:~$ su -
@@ -30,7 +32,7 @@ root@debian:~#
 Ahora, para tener más paquetes a nuestra disposición, vamos a editar el archivo <br>***/etc/apt/sources.list***<br>
 Añadimos en cada uno de los repositorios las etiquetas de ***nonfree*** y ***contrib*** y debe quedar tal que así:
 
-```console
+```text
 deb http://deb.debian.org/debian/ bullseye main contrib non-free
 deb-src http://deb.debian.org/debian/ bullseye main contrib non-free
 
@@ -61,7 +63,7 @@ root@debian:~# rm -r /home/sami/*
 Y ahora editamos el archivo
 <br>***/home/sami/.config/user-dirs.dirs***<br>
 Para dejarlo tal que así:
-```console
+```text
 XDG_DESKTOP_DIR="$HOME/desktop"
 XDG_DOWNLOAD_DIR="$HOME/downloads"
 XDG_TEMPLATES_DIR="$HOME/templates"
@@ -72,9 +74,11 @@ XDG_PICTURES_DIR="$HOME/images"
 XDG_VIDEOS_DIR="$HOME/videos"
 ```
 <br>
-## <center>Instalando_Paquetes</center><br>
+*Como sé que sois super listos, no hace falta deciros que pongáis vuestro nombre de usuario en lugar de sami.*
+<hr>
+## <br><center>Paquetes</center><br>
 Vamos a instalar una serie de paquetes a mi gusto.
-<br>Sois libres de eliminar o sustituir los paquetes similares a vuestro gusto, pero tened en cuenta que los archivos de configuración
+<br>Sois libres de eliminar o sustituir los paquetes similares, pero tened en cuenta que los archivos de configuración
 que usaré en el post son diseñados para estos paquetes especificamente.
 ```console
 root@debian:~# apt update
@@ -91,15 +95,15 @@ root@debian:~# apt install gnome sudo firefox-esr kitty zsh compton rofi pulseau
 **compton**: Compositor de ventanas. Actualmente se recomiendo cambiar a *picom*, pero soy un tio de viejas costumbres.<br>
 **rofi**: Lanzador de APPs.<br>
 **pulseaudio+pavucontrol**: Van de la mano y sirven para gestionar el audio.<br>
-**polybar**: Sirve para crear *barras de tareas* en el escritorio.<br>
+**polybar**: Sirve para crear *barras de tareas super hackers* en el escritorio.<br>
 **feh**: Manipulador de imágenes.<br>
 **flameshot**: Capturas de pantalla.<br>
 **ranger**: Explorador de archivos de terminal.<br>
 **thunar**: Explorador de archivos gráfico.<br>
 **git**: Aplicación para gestionar *Github*.<br>
-**telegram-desktop**: Aplicación de escritorio de Telegram.<br>
+**telegram-desktop**: Aplicación de escritorio de Telegram.
 
-Una vez instalado todo, vamos a dar permisos de **sudo** a nuestro usuario para dejar de utilizar *root*.<br>
+<br>Una vez instalado todo, vamos a dar permisos de **sudo** a nuestro usuario para dejar de utilizar *root*.<br>
 
 Para ello, vamos a añadir a nuestro usuario principal al grupo **sudo** de la siguiente manera:<br>
 ```console
@@ -117,9 +121,12 @@ root@debian:~# cd i3-gaps-deb
 root@debian:~# ./i3-gaps-deb
 ```
 <br>
-Solo nos queda reiniciar el sistema y rezar por que no explote nada.
-
-## <center>Archivos_de_Configuración</center><br>
+*Solo nos queda reiniciar el sistema y rezar por que no explote nada.*
+<hr>
+## <br><center>Archivos</center><br>
+Hemos instalado todo y tenemos reiniciado el equipo.<br>
+En la pantalla de login hemos elegido nuestro nuevo entorno **i3** y estamos en la ventanita negra que es más fea que un frigorifico por detrás.<br>
+No preocuparse.<br>
 Nos toca ponernos con los archivos de configuración de las aplicaciones que hemos instalado, que es lo que les va a dar el toque *hacker*.<br>
 Por hacerlo lo más simple posible, nos vamos a descargar todos los archivos juntos y los vamos a ir colocando en las rutas siguientes:
 
