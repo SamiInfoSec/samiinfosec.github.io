@@ -2,9 +2,7 @@
 layout: post
 title:  "Configurando Debian 11"
 date:   2022-05-27
-last_modified_at: 2022-05-27
-categories: [Jekyll Paper]
-tags: [Getting Start]
+last_modified_at: 2022-05-30
 ---
 
 <br>
@@ -18,6 +16,8 @@ Voy a dar todos los detalles para llegar al mismo punto, partiendo de una instal
 1. [**Configuración**](#configuración)
 2. [**Paquetes**](#paquetes)
 3. [**Archivos**](#archivos)
+4. [**Combinaciones**](#combinaciones)
+5. [**Resultado**](#resultado)
 
 <hr>
 ## <br><center>Configuración</center><br>
@@ -145,6 +145,24 @@ El contenido de la carpeta **kitty** va en:<br>
 ***/home/sami/.config/kitty/***<br><br>
 El archivo **compton.conf** lo metemos en:<br>
 ***/home/sami/.config/***<br><br>
+
+Vamos a instalar ahora una *herramienta* que acabo de descubrir y cumple mis dos requisitos, funcional y estética, ***powerlevel10k***.<br>
+Gracias a otro grande **https://github.com/romkatv/** tenemos una maravilla que se complementa de lujo con *zsh*.<br>
+```console
+sami@debian:~$ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+sami@debian:~$ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+```
+<br>
+No voy a postear cómo configurar *powerlevel10k* por que es muy personal y es ir eligiendo opciones, seréis capaces de hacerlo, no preocuparse.<br>
+¿Y si os digo que pulsando dos veces **ESC** podéis poner la palabra **sudo** delante de vuestro comando?<br>
+Con lo que se me olvida poner el puto *sudo* a mi, me viene increible.<br>
+Solo hace falta bajarnos el script y meterlo en la carpeta:<br>
+***/usr/share/zsh-sudo/***<br>
+```console
+sami@debian:~$ wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh
+```
+<br>
+Si nos aparece algún error en estos archivos, todo es cuestión de cambiar **rutas** y/o nombres de **usuario**.<br>
 *Con reiniciar las aplicaciones tras copiar los archivos es suficiente, pero como dudo de las capacidades individuales, vamos a reiniciar el sistema para que se
 ponga todo solito.*
 <hr>
@@ -164,4 +182,8 @@ Aquí os dejo una pequeña guía inicial con las combinaciones más útiles que 
 **Win+Shift+[1,2,3,4,5,6,7,8]**: Mover ventana a otro escritorio.<br>
 **Win+Q**: Cerrar la ventana.<br>
 
-
+## <br><center>Resultado</center><br>
+Aquí os dejo unas fotitos de cómo debe quedar si lo habéis hecho todo bien.<br>
+Cualquier distancia con la realidad es solo culpa vuestra.<br>
+*Cualquier problema, podéis poneros en contacto conmigo y os echo una mano encantado <3*<br>
+<center><img src="https://raw.githubusercontent.com/SamiInfoSec/samiinfosec.github.io/master/assets/images/desktopBlog.png"></center>
