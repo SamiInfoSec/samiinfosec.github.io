@@ -128,20 +128,40 @@ Hemos instalado todo y tenemos reiniciado el equipo.<br>
 En la pantalla de login hemos elegido nuestro nuevo entorno **i3** y estamos en la ventanita negra que es más fea que un frigorifico por detrás.<br>
 No preocuparse.<br>
 Nos toca ponernos con los archivos de configuración de las aplicaciones que hemos instalado, que es lo que les va a dar el toque *hacker*.<br>
-Por hacerlo lo más simple posible, nos vamos a descargar todos los archivos juntos y los vamos a ir colocando en las rutas siguientes:
+Por hacerlo lo más simple posible, nos vamos a descargar todos los archivos juntos y los vamos a ir colocando en las rutas siguientes:<br>
+<br>
+<hr>
+*Pulsa [**AQUÍ**]("https://github.com/SamiInfoSec/samiinfosec.github.io/raw/master/assets/confFiles.tar") para descargar el comprimido con los ficheros*
+<hr><br>
+El contenido de la carpeta de **fonts** vamos a copiarlo en:<br>
+***/usr/share/fonts/***<br><br>
+El contenido de la carpeta **polybar** lo copiamos en:<br>
+***/home/sami/.config/polybar/***<br><br>
+El archivo **i3/config** lo metemos en la carpeta:<br>
+***/home/sami/.config/i3/***<br><br>
+Los archivos **.Xresources** y **.zshrc** van en:<br>
+***/home/sami/***<br><br>
+El contenido de la carpeta **kitty** va en:<br>
+***/home/sami/.config/kitty/***<br><br>
+El archivo **compton.conf** lo metemos en:<br>
+***/home/sami/.config/***<br><br>
+*Con reiniciar las aplicaciones tras copiar los archivos es suficiente, pero como dudo de las capacidades individuales, vamos a reiniciar el sistema para que se
+ponga todo solito.*
+<hr>
 
-El contenido de la carpeta de **fonts** vamos a copiarlo en:
-***/usr/share/fonts/***<br>
-El contenido de la carpeta **polybar** lo copiamos en:
-***/home/sami/.config/polybar/***<br>
-El archivo **config** lo metemos en la carpeta:
-***/home/sami/.config/i3/***<br>
-Los archivos **.Xresources** y **.zshrc** van en:
-***/home/sami/***<br>
-El contenido de la carpeta **kitty** va en:
-***/home/sami/.config/kitty/***<br>
-
-
-
+## <br><center>Combinaciones</center><br>
+Ya hemos aterrizado en nuestro precioso sistema pero no sabemos ni abrir una terminal.<br>
+Como consejo, os recomiendo cacharrear con los archivos de configuración que hemos copiado y leerlo y tocarlo todo, sin miedo, que si rompéis algo, podéis volver a copiarlos.<br>
+Aquí os dejo una pequeña guía inicial con las combinaciones más útiles que debéis conocer:<br><br>
+**Win+Enter**: Abrir una terminal.<br>
+**Win+[1,2,3,4,5,6,7,8]**: Cambio de escritorio.<br>
+**Win+0**: Menú del sistema.<br>
+**Win+D**: Menú rofi para lanzar aplicaciones.<br>
+**Win+F**: Abrir firefox.<br>
+**Win+T**: Abrir telegram.<br>
+**Win+[H,V]**: Cambiar la orientación de las ventanas.<br>
+**Win+R**: Redimensionar tamaño de las ventanas. (Pulsar ESC al acabar)<br>
+**Win+Shift+[1,2,3,4,5,6,7,8]**: Mover ventana a otro escritorio.<br>
+**Win+Q**: Cerrar la ventana.<br>
 
 
