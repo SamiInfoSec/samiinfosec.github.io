@@ -185,5 +185,9 @@ Aquí os dejo una pequeña guía inicial con las combinaciones más útiles que 
 ## <br><center>Resultado</center><br>
 Aquí os dejo unas fotitos de cómo debe quedar si lo habéis hecho todo bien.<br>
 Cualquier distancia con la realidad es solo culpa vuestra.<br>
-*Cualquier problema, podéis poneros en contacto conmigo y os echo una mano encantado <3*<br>
 <center><img src="https://raw.githubusercontent.com/SamiInfoSec/samiinfosec.github.io/master/assets/images/desktopBlog.png"></center>
+<center><img src="https://raw.githubusercontent.com/SamiInfoSec/samiinfosec.github.io/master/assets/images/layoutsTiles.png"></center>
+<br>
+
+*Cualquier problema, podéis poneros en contacto conmigo y os echo una mano encantado <3*<br>
+<center><img src="https://raw.githubusercontent.com/SamiInfoSec/samiinfosec.github.io/master/assets/images/logoAndoniSmall.png"></center>
