@@ -183,8 +183,8 @@ Aquí os dejo una pequeña guía inicial con las combinaciones más útiles que 
 **Win+Q**: Cerrar la ventana.<br>
 
 ## <br><center>Resultado</center><br>
-Aquí os dejo unas fotitos de cómo debe quedar si lo habéis hecho todo bien.<br><br>
-Cualquier distancia con la realidad es solo culpa vuestra.<br>
+Aquí os dejo unas fotitos de cómo debe quedar si lo habéis hecho todo bien.<br>
+Cualquier distancia con la realidad es solo culpa vuestra.<br><br>
 <center><img src="https://raw.githubusercontent.com/SamiInfoSec/samiinfosec.github.io/master/assets/images/desktopBlog.png"></center>
 <center><img src="https://raw.githubusercontent.com/SamiInfoSec/samiinfosec.github.io/master/assets/images/layoutsTiles.png"></center>
 <br>
