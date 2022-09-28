@@ -181,6 +181,7 @@ Aquí os dejo una pequeña guía inicial con las combinaciones más útiles que 
 **Win+R**: Redimensionar tamaño de las ventanas. (Pulsar ESC al acabar)<br>
 **Win+Shift+[1,2,3,4,5,6,7,8]**: Mover ventana a otro escritorio.<br>
 **Win+Q**: Cerrar la ventana.<br>
+<hr><br>
 
 ## <br><center>Resultado</center><br>
 <center>Aquí os dejo unas fotitos de cómo debe quedar si lo habéis hecho todo bien.</center><br>
