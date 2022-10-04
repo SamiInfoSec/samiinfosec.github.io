@@ -82,7 +82,9 @@ Vamos a instalar una serie de paquetes a mi gusto.
 que usaré en el post son diseñados para estos paquetes especificamente.
 ```console
 root@debian:~# apt update
-root@debian:~# apt install gnome sudo firefox-esr kitty zsh compton rofi pulseaudio pavucontrol polybar feh zsh-autosuggestions zsh-syntax-highlighting flameshot ranger thunar git telegram-desktop
+root@debian:~# apt install gnome sudo firefox-esr kitty zsh compton rofi bat pulseaudio pavucontrol polybar feh zsh-autosuggestions zsh-syntax-highlighting flameshot ranger thunar git telegram-desktop
+root@debian:~# wget https://github.com/Peltoche/lsd/releases/download/0.21.0/lsd_0.21.0_amd64.deb
+root@debian:~# dpkg -i lsd_0.21.0_amd64.deb
 ```
 <br>
 ### Descripción de Paquetes:<br>
@@ -94,6 +96,7 @@ root@debian:~# apt install gnome sudo firefox-esr kitty zsh compton rofi pulseau
 **zsh-autosuggestions** y **zsh-syntax-highlighting**: Complementos para *zsh* que veremos más adelante.<br>
 **compton**: Compositor de ventanas. Actualmente se recomiendo cambiar a *picom*, pero soy un tio de viejas costumbres.<br>
 **rofi**: Lanzador de APPs.<br>
+**bat**: El comando *cat* pero vitaminado.<br>
 **pulseaudio+pavucontrol**: Van de la mano y sirven para gestionar el audio.<br>
 **polybar**: Sirve para crear *barras de tareas super hackers* en el escritorio.<br>
 **feh**: Manipulador de imágenes.<br>
@@ -136,7 +139,8 @@ Por hacerlo lo más simple posible, nos vamos a descargar todos los archivos jun
 El contenido de la carpeta de **fonts** vamos a copiarlo en:<br>
 ***/usr/share/fonts/***<br><br>
 El contenido de la carpeta **polybar** lo copiamos en:<br>
-***/home/sami/.config/polybar/***<br><br>
+***/home/sami/.config/polybar/***<br>
+*Los módulos que trae polybar pueden cambiar según componentes, si no se os muestra como en los ejemplos, tendréis que modificar los nombres de vuestros componentes en el archivo de arriba.*<br><br>
 El archivo **i3/config** lo metemos en la carpeta:<br>
 ***/home/sami/.config/i3/***<br><br>
 Los archivos **.Xresources** y **.zshrc** van en:<br>
@@ -154,7 +158,7 @@ sami@debian:~$ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 <br>
 No voy a postear cómo configurar *powerlevel10k* por que es muy personal y es ir eligiendo opciones, seréis capaces de hacerlo, no preocuparse.<br>
-¿Y si os digo que pulsando dos veces **ESC** podéis poner la palabra **sudo** delante de vuestro comando?<br>
+<br>¿Y si os digo que pulsando dos veces **ESC** podéis poner la palabra **sudo** delante de vuestro comando?<br>
 Con lo que se me olvida poner el puto *sudo* a mi, me viene increible.<br>
 Solo hace falta bajarnos el script y meterlo en la carpeta:<br>
 ***/usr/share/zsh-sudo/***<br>
@@ -163,6 +167,7 @@ sami@debian:~$ wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plu
 ```
 <br>
 Si nos aparece algún error en estos archivos, todo es cuestión de cambiar **rutas** y/o nombres de **usuario**.<br>
+
 *Con reiniciar las aplicaciones tras copiar los archivos es suficiente, pero como dudo de las capacidades individuales, vamos a reiniciar el sistema para que se
 ponga todo solito.*
 <hr>
