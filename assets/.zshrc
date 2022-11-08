@@ -129,85 +129,29 @@ function rmk(){
 (( ! ${+functions[p10k-instant-prompt-finalize]} )) || p10k-instant-prompt-finalize
 source ~/powerLevel10k/powerlevel10k.zsh-theme
 
-# Custom Andoni
+# Custom Imback
 alias cls='clear'
 alias up='sudo apt update -y'
 alias upg='sudo apt upgrade -y'
 alias bye='shutdown now'
 alias catn='/bin/cat'
-alias aliasll="clear && grep -A10000 Andoni ~/.zshrc"
-alias bins="cd ~/Documentos/scripts/bash/"
+alias aliasll="clear && grep -A10000 Imback ~/.zshrc"
 alias winbox="wine ~/winbox/winbox64.exe &"
 alias net_r="sudo systemctl restart NetworkManager"
-alias burp='/home/andoni/BurpSuiteCommunity/BurpSuiteCommunity'
-alias exploit='/home/andoni/exploit-database/searchsploit'
-alias hack='cd /home/andoni/Documentos/hacking'
+alias burp='/home/imback/BurpSuiteCommunity/BurpSuiteCommunity'
+alias exploit='/home/imback/exploit-database/searchsploit'
 alias adr='java -jar /usr/local/bin/pilar.jar'
 alias la='ls -la'
 alias alldown='sudo systemctl stop ufw && sudo iptables -F'
-alias vpn_ecotisa_up='nmcli con up id Ecotisa --ask'
-alias vpn_ecotisa_down='nmcli con down id Ecotisa'
-alias notes='/home/andoni/notes/Obsidian-0.15.9.AppImage &'
-
-# Servers Cloud
-alias grafana="ssh -p 12221 andoni@ecoicloud.es"
-alias odoo="ssh -p 11222 andoni@ecoicloud.es"
-alias ecoprint="ssh -p 22211 root@ecoicloud.es"
-alias ecoking="ssh -p 12221 ecoking@ecoicloud.es"
-alias cloud='ssh -p 22122 sistemas@ecoicloud.es'
-alias cloudscp='{ IFS= read -r p && scp -P 22122 "$p" sistemas@ecoicloud.es:; } <<<'
-alias grafana='ssh -p 22222 sistemas@ecoicloud.es'
-
-# Servers Ecotisa
-alias asterisk='ssh -i ~/.sysadmin.key root@192.168.2.10'
-alias pasterisk='ssh -p 22122 sistemas@192.168.2.11'
-alias kraken='ssh -p 22122 sistemas@192.168.2.89'
-alias server_robots='ssh -p 22122 sistemas@192.168.2.171'
+alias notes='/home/imback/notes/Obsidian-0.15.9.AppImage &'
 
 # Custom System
 #./.screenlayout/defaultLayer.sh
 alias ccat="/bin/cat"
 alias ssh="kitty +kitten ssh"
-alias htb="cd /home/andoni/documents/htb/"
-alias ceh="cd /home/andoni/documents/ceh/"
+alias htb="cd /home/imback/documents/htb/"
+alias ceh="cd /home/imback/documents/ceh/"
 
 # Custom fail2ban aliases:
 alias banned="fail2ban-client status sshd"
 alias unbann="fail2ban-client set sshd unbanip"
-
-# Servers ERP
-alias erp_cerasusviejito='ssh -p 22122 andoni@51.210.247.13'
-alias erp_rrhh="ssh -p 22122 andoni@146.59.235.103"
-alias erp_ecotisa="ssh -i ~/.ssh/sysadmin.key root@192.168.2.23"
-alias erp_coenyco='ssh -p 22122 andoni@51.38.177.102'
-alias erp_cerasus='ssh -p 22122 andoni@193.70.84.63'
-alias erp_rivas='ssh sistemas@137.74.106.137'
-alias erp_winkle='ssh -p 22122 andoni@135.125.103.116'
-alias erp_mpf='ssh -p 22122 sistemas@5.196.27.250'
-alias erp_plusultra='ssh -p 22122 sistemas@37.187.198.75'
-alias erp_cerasusfinal='ssh -p 22122 sistemas@5.196.224.156'
-alias erp_ecogestion='ssh -p 22122 sistemas@193.70.91.156'
-alias erp_onepool='ssh -p 22122 sistemas@54.36.100.162'
-
-# Server Hosting
-alias server_ecotisa.com="ssh -p 22122 andoni@207.180.227.201"
-alias server_oceanic="ssh -p 22122 andoni@91.142.214.223"
-alias server_ecoitecback2='ssh -p 22122 andoni@188.164.193.184'
-alias server_buffettest='ssh -p 22122 andoni@51.77.211.204'
-alias server_mipequeñafabrica='ssh -p 790 andoni@149.62.168.231'
-alias server_azpiazu='ssh andoni@91.142.214.190'
-alias server_as9team='ssh andoni@91.142.214.237'
-alias server_dnsecoitec='ssh -p 22122 sistemas@188.164.193.111'
-alias server_ecoitecback='ssh -p 790 andoni@91.142.218.57'
-alias server_whitevoid='ssh -p 790 andoni@149.62.172.159'
-alias server_front='ssh -p 22122 sistemas@192.168.5.193'
-alias server_rivasnuevo='ssh -p 22122 sistemas@141.94.247.5'
-alias server_maikioncerasus='ssh -p 22122 sistemas@51.210.177.82'
-alias server_configuracion='ssh -p 22122 sistemas@141.95.159.38'
-alias server_ecogestion2='ssh -p 22122 sistemas@141.95.159.39'
-alias server_server='ssh -p 22122 sistemas@51.210.177.82'
-alias server_ubuntu='ssh -p 22122 sistemas@141.95.159.38'
-alias server_servidor='ssh -p 22122 sistemas@37.187.37.13'
-alias server_VPSEcoitec='ssh -p 22122 andoni@94.127.187.114'
-alias server_cerasuslocal='ssh -p 2223 sistemas@192.168.2.222'
-alias server_snort='ssh -p 22122 sistemas@192.168.5.7'
